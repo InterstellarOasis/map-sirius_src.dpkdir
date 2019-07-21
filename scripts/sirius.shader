@@ -10,7 +10,7 @@ textures/sirius/top-of-the-heap
       surfaceparm nolightmap
       surfaceparm sky
       //q3map_sun   .5 .37 .22 300 265 15
-      q3map_surfacelight 15
+      q3map_surfacelight 50
 
      skyparms env/sirius/top-of-the-heap/top-of-the-heap512 - -
 }
@@ -160,6 +160,8 @@ textures/sirius/e6metalfan_s2
 	}
 }
 
+// -------------------- Panels / Decoration -------------------------
+
 textures/sirius/panel
 {
 	qer_editorimage textures/sirius/panel.tga
@@ -174,6 +176,28 @@ textures/sirius/panel
 	}
 	{
 		map textures/sirius/panel.blend.tga
+		blendfunc GL_ONE GL_ONE
+	}
+}
+
+// glowing support stripe (niveus)
+textures/sirius/wsupport12
+{
+	surfaceparm nomarks
+	q3map_surfacelight 1000
+	//light1
+	{
+		map $lightmap
+		rgbGen identity
+	}
+	{
+		map textures/sirius/wsupport12.tga
+		blendFunc GL_DST_COLOR GL_ZERO
+		rgbGen identity
+	}
+	{
+		map textures/sirius/wsupport12.blend.tga
+		rgbGen wave sin 0.5 0.5 1 1
 		blendfunc GL_ONE GL_ONE
 	}
 }
@@ -193,6 +217,7 @@ textures/sirius/e8basictrim2_red_cullnone
                 blendfunc filter
         }
 }
+
 
 // -------------------- Ladder --------------------------------------
 
@@ -226,6 +251,22 @@ textures/sirius/ing-laser1
                 //rgbGen          vertex
                 alphaGen        vertex
         }
+}
+
+// -------------------- Nonsolid ------------------------------------
+textures/sirius/mtl_rst_nosolid
+{
+	qer_editorimage textures/sirius/mtl_rst.tga
+	surfaceparm nonsolid
+	{
+                      map $lightmap
+                      rgbGen identity
+        }
+
+	{
+		map textures/sirius/mtl_rst.tga
+		blendFunc GL_DST_COLOR GL_ZERO
+	}
 }
 
 // -------------------- Lights  -------------------------------------
@@ -421,6 +462,31 @@ textures/sirius/proto_lightred_64_7k
 	}
 	
 }
+
+// from niveus - blinking light
+textures/sirius/proto_lightred_64_blink
+{
+	q3map_lightimage textures/sirius/proto_lightred_64.tga
+	qer_editorimage textures/sirius/proto_lightred_64.tga
+	surfaceparm nomarks
+	q3map_surfacelight 50
+	{
+		map $lightmap
+		rgbGen identity
+	}
+	{
+		map textures/sirius/proto_lightred_64.tga
+		blendFunc filter
+		rgbGen identity
+	}
+        {
+		map textures/sirius/proto_lightred_64.tga
+		blendFunc add
+		rgbGen wave square .5 .5 0 1
+	}
+	
+}
+
 textures/sirius/sq_light_orange_s_25k
 {
 	qer_editorimage textures/sirius/sq_light_orange.tga
@@ -464,7 +530,7 @@ textures/sirius/e8tmtllight2
 	q3map_lightimage textures/sirius/e8tmtllight2.blend.tga
 	surfaceparm nomarks
 	surfaceparm nonsolid
-	q3map_surfacelight 950
+	q3map_surfacelight 1000
 	{
 		map textures/sirius/e8tmtllight2.tga
 	}
@@ -476,5 +542,68 @@ textures/sirius/e8tmtllight2
 	{
 		map textures/sirius/e8tmtllight2.blend.tga
 		blendfunc add
+	}
+}
+
+// cubelight white (niveus)
+textures/sirius/cubelight_32_white_250
+{
+	qer_editorimage textures/sirius/cubelight_32_white.tga
+	surfaceparm nomarks
+	q3map_surfacelight 250
+	{
+		map $lightmap
+		rgbGen identity
+	}
+	{
+		map textures/sirius/cubelight_32_white.tga
+		blendFunc GL_DST_COLOR GL_ZERO
+		rgbGen identity
+	}
+	{
+		map textures/sirius/cubelight_32_white.blend.tga
+		blendfunc GL_ONE GL_ONE
+	}
+}
+
+// cubelight white (niveus)
+textures/sirius/cubelight_32_white_5k
+{
+	qer_editorimage textures/sirius/cubelight_32_white.tga
+	surfaceparm nomarks
+	q3map_surfacelight 5000
+	{
+		map $lightmap
+		rgbGen identity
+	}
+	{
+		map textures/sirius/cubelight_32_white.tga
+		blendFunc GL_DST_COLOR GL_ZERO
+		rgbGen identity
+	}
+	{
+		map textures/sirius/cubelight_32_white.blend.tga
+		blendfunc GL_ONE GL_ONE
+	}
+}
+
+// cubelight white (niveus)
+textures/sirius/cubelight_32_white_10k
+{
+	qer_editorimage textures/sirius/cubelight_32_white.tga
+	surfaceparm nomarks
+	q3map_surfacelight 10000
+	{
+		map $lightmap
+		rgbGen identity
+	}
+	{
+		map textures/sirius/cubelight_32_white.tga
+		blendFunc GL_DST_COLOR GL_ZERO
+		rgbGen identity
+	}
+	{
+		map textures/sirius/cubelight_32_white.blend.tga
+		blendfunc GL_ONE GL_ONE
 	}
 }
