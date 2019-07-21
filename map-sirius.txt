@@ -86,16 +86,13 @@ SOURCE
 STATISTICS
 
 	Construction time: 	8 months
-	Brushes:		9667
+	Brushes:		9668
 	Patches:		330
 	Entities:		213
 	Build time:		1 hour (AMD Athlon64 X2 4600+)
 
 HISTORY
 	
-	2007-09-23: Bugfix
-		Fixed a spectator trap in the Launch Bay and a misaligned patch
-
 	2007-09-03: Final
 		Improved human base, added an extra base location
 		Roof window in the Flow Control room

@@ -566,7 +566,7 @@
 {
 "classname" "team_alien_spawn"
 "origin" "-272 -1856 288"
-"angle" "0"
+"angle" "-3.50835e-15"
 }
 {
 "classname" "func_door"
@@ -1077,6 +1077,7 @@
 "lip" "16"
 "speed" "20"
 "team" "shaft"
+"targetname" "func_door1"
 "angle" "0"
 "wait" "15"
 "model" "*30"
@@ -1086,9 +1087,24 @@
 "speed" "20"
 "lip" "16"
 "team" "shaft"
+"targetname" "func_door1"
 "angle" "180"
 "wait" "15"
 "model" "*31"
+}
+{
+"classname" "trigger_multiple"
+"target" "func_door1"
+"wait" "30"
+"model" "*32"
+}
+{
+"classname" "target_print"
+"origin" "-160 -2048 324"
+"angle" "90"
+"spawnflags" "4"
+"message" "Opening launch bay doors"
+"targetname" "func_door1"
 }
 {
 "classname" "target_location"
@@ -1192,7 +1208,7 @@
 "wait" "30"
 "target" "ventdoor"
 "angle" "0"
-"model" "*32"
+"model" "*33"
 }
 {
 "classname" "team_alien_acid_tube"
