@@ -1,0 +1,37 @@
+// Particles for Sirius
+
+// steam, from arachnid2
+sirius/steam
+{
+        ejector
+        {
+                particle
+                {
+                shader sync textures/sirius/mist_s
+                displacement 0 0 0 0
+
+                velocityType            static
+
+                velocityDir             linear
+
+                velocityMagnitude       125
+                velocity                -.1 .05 -1 ~10
+
+                accelerationType        static
+                accelerationDir         linear
+                acceleration            0 0 10 ~5
+                accelerationMagnitude   50
+
+
+                radius          0 5 25
+                alpha           250 .5 0
+                rotation        0 ~360 ~360
+                bounce          0.0
+
+                lifeTime 2000
+                }
+        count infinite
+        delay 0
+        period 25 - ~0%
+        }
+}

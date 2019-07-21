@@ -18,73 +18,23 @@ textures/sirius/top-of-the-heap
 
 // -------------------- Glass -----------------------
 
-// by Ingar
-textures/sirius/ing-glass2
-{
-        qer_editorimage textures/sirius/ing-glass2.tga
-        qer_trans .5
-        surfaceparm nolightmap
-        surfaceparm trans
-	surfaceparm nomarks
-	surfaceparm playerclip
-        {
-                map textures/sirius/ing-glass2.tga
-                tcGen environment
-                blendfunc gl_dst_color gl_src_alpha
-        }
-//        {
-//                map textures/sirius/ing-glass2.tga
-//                //blendfunc gl_dst_color gl_src_alpha
-//                blendfunc filter
-//        }
-        {
-                map $lightmap
-                rgbgen identity
-                blendfunc gl_dst_color gl_zero
-        }
-}
-
-// by Ingar
-textures/sirius/glass_outside
+// by Ingar - last changes 2007-08-22
+textures/sirius/glass
 {
         qer_editorimage textures/sirius/glass.tga
         qer_trans .5
         surfaceparm nolightmap
         surfaceparm trans
-	surfaceparm nomarks
+//	surfaceparm nomarks
 	surfaceparm playerclip
-//	cull none
         {
                 map textures/sirius/glass.tga
+                blendfunc filter
+        }
+        {
+                map textures/sirius/glass-env.tga
                 tcGen environment
                 blendfunc gl_dst_color gl_src_alpha
-        }
-        {
-                map textures/sirius/glass.tga
-                //blendfunc gl_dst_color gl_src_alpha
-                blendfunc filter
-        }
-        {
-                map $lightmap
-                rgbgen identity
-                blendfunc gl_dst_color gl_zero
-        }
-}
-
-// by Ingar
-textures/sirius/glass_inside
-{
-        qer_editorimage textures/sirius/glass.tga
-        qer_trans .5
-        surfaceparm nolightmap
-        surfaceparm trans
-	surfaceparm nomarks
-	surfaceparm playerclip
-//	cull none
-        {
-                map textures/sirius/glass.tga
-                //blendfunc gl_dst_color gl_src_alpha
-                blendfunc filter
         }
         {
                 map $lightmap
@@ -185,7 +135,6 @@ textures/sirius/wsupport12
 {
 	surfaceparm nomarks
 	q3map_surfacelight 1000
-	//light1
 	{
 		map $lightmap
 		rgbGen identity
@@ -233,24 +182,6 @@ textures/sirius/ladder {
 	surfaceparm nomarks
 	surfaceparm noimpact
 	surfaceparm playerclip
-}
-
-// -------------------- Ion Cannon ----------------------------------
-// by Ingar
-
-textures/sirius/ing-laser1
-{
-	qer_editorimage textures/sirius/ing-laser1.tga
-        //entityMergable
-        cull none
-        {
-                map textures/sirius/ing-laser1.tga
-		//blendFunc blend
-		depthwrite
-                blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-                //rgbGen          vertex
-                alphaGen        vertex
-        }
 }
 
 // -------------------- Nonsolid ------------------------------------
@@ -425,7 +356,6 @@ textures/sirius/proto_lightred_64_300
 	qer_editorimage textures/sirius/proto_lightred_64.tga
 	surfaceparm nomarks
 	q3map_surfacelight 300
-//	light 1
 	{
 		map $lightmap
 		rgbGen identity
@@ -606,4 +536,19 @@ textures/sirius/cubelight_32_white_10k
 		map textures/sirius/cubelight_32_white.blend.tga
 		blendfunc GL_ONE GL_ONE
 	}
+}
+
+// -------------------- Mist -----------------------
+
+textures/sirius/mist_s
+{
+	qer_editorimage textures/sirius/mist.tga
+        entityMergable
+        cull none
+        {
+                map textures/sirius/mist.tga
+                blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+                rgbGen          vertex
+                alphaGen        vertex
+        }
 }
