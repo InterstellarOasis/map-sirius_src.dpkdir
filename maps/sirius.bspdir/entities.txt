@@ -38,7 +38,7 @@
 "classname" "target_speaker"
 "origin" "64 -412 84"
 "spawnflags" "1"
-"noise" "sound/sirius/lava_loop.wav"
+"noise" "sound/sirius/lava_loop"
 "angle" "180"
 }
 {
@@ -182,7 +182,7 @@
 "classname" "target_speaker"
 "origin" "-568 1376 208"
 "spawnflags" "1"
-"noise" "sound/ambient/fan.wav"
+"noise" "sound/ambient/fan"
 }
 {
 "classname" "light"
@@ -376,7 +376,7 @@
 {
 "classname" "target_speaker"
 "origin" "1282 320 312"
-"noise" "sound/sirius/steam.wav"
+"noise" "sound/sirius/steam"
 "spawnflags" "1"
 }
 {
@@ -452,7 +452,7 @@
 "classname" "target_speaker"
 "origin" "2032 -20 256"
 "spawnflags" "1"
-"noise" "sound/sirius/30-60HzHum.wav"
+"noise" "sound/sirius/30-60hzhum"
 }
 {
 "classname" "light"
@@ -720,7 +720,7 @@
 {
 "classname" "target_speaker"
 "origin" "2888 1032 240"
-"noise" "sound/sirius/fan.wav"
+"noise" "sound/sirius/fan"
 "spawnflags" "1"
 }
 {
@@ -800,7 +800,7 @@
 "classname" "target_speaker"
 "origin" "2568 916 48"
 "angle" "90"
-"noise" "sound/sirius/electricspark.wav"
+"noise" "sound/sirius/electricspark"
 "wait" "5"
 "random" "3"
 "targetname" "target_speakerspark"
@@ -942,7 +942,7 @@
 "origin" "3160 3400 128"
 "angle" "-90"
 "targetname" "target_print1"
-"noise" "sound/sirius/denied.wav"
+"noise" "sound/sirius/denied"
 "spawnflags" "8"
 }
 {
@@ -950,7 +950,7 @@
 "origin" "-1248 -868 8"
 "angle" "-90"
 "spawnflags" "1"
-"noise" "sound/sirius/spacehum.wav"
+"noise" "sound/sirius/spacehum"
 }
 {
 "classname" "func_door"
@@ -991,7 +991,7 @@
 {
 "classname" "target_speaker"
 "origin" "704 -1848 280"
-"noise" "sound/sirius/alarm.wav"
+"noise" "sound/sirius/alarm"
 "spawnflags" "8"
 "targetname" "ventdoor"
 }
@@ -1069,7 +1069,7 @@
 {
 "classname" "target_speaker"
 "origin" "2160 1032 616"
-"noise" "sound/sirius/wind2.wav"
+"noise" "sound/sirius/wind2"
 "spawnflags" "1"
 }
 {

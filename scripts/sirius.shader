@@ -5,7 +5,7 @@
 // environment map "Top of the Heap" by Mighty Pete
 textures/sirius/top-of-the-heap
 {
-      qer_editorimage env/sirius/top-of-the-heap/top-of-the-heap-small.jpg
+      qer_editorimage env/sirius/top-of-the-heap/top-of-the-heap-small
       surfaceparm noimpact
       surfaceparm nolightmap
       surfaceparm sky
@@ -21,18 +21,18 @@ textures/sirius/top-of-the-heap
 // by Ingar - last changes 2007-08-22
 textures/sirius/glass
 {
-        qer_editorimage textures/sirius/glass.tga
+        qer_editorimage textures/sirius/glass
         qer_trans .5
         surfaceparm nolightmap
         surfaceparm trans
 //	surfaceparm nomarks
 	surfaceparm playerclip
         {
-                map textures/sirius/glass.tga
+                map textures/sirius/glass
                 blendfunc filter
         }
         {
-                map textures/sirius/glass-env.tga
+                map textures/sirius/glass-env
                 tcGen environment
                 blendfunc gl_dst_color gl_src_alpha
         }
@@ -48,14 +48,14 @@ textures/sirius/glass
 // by evillair
 textures/sirius/e6bsegrtflr256
 {
-        qer_editorimage textures/sirius/e6bsegrtflr256.tga
+        qer_editorimage textures/sirius/e6bsegrtflr256
         surfaceparm trans
         surfaceparm nomarks
         surfaceparm metalsteps
         cull none
 
         {
-                map textures/sirius/e6bsegrtflr256.tga
+                map textures/sirius/e6bsegrtflr256
                 alphafunc GE128
                 depthwrite
         }
@@ -75,14 +75,14 @@ textures/sirius/e8clangfloor05:q3map
 
 textures/sirius/tin_s
 {
-	qer_editorimage textures/sirius/tin.tga
+	qer_editorimage textures/sirius/tin
 	{
 		map $lightmap 
 		rgbGen identity
 		tcGen lightmap 
 	}
 	{
-		map textures/sirius/tin.tga
+		map textures/sirius/tin
 		blendfunc gl_dst_color gl_src_alpha
 		rgbGen identity
 		alphaGen lightingSpecular
@@ -94,14 +94,14 @@ textures/sirius/tin_s
 // by Evillair
 textures/sirius/e6metalfan_s2
 {
-	qer_editorimage textures/sirius/e6metalfan.tga
+	qer_editorimage textures/sirius/e6metalfan
 
 	{
-		map textures/sirius/e6metalfan_blade.tga
+		map textures/sirius/e6metalfan_blade
 		tcmod rotate 5000
 	}
 	{
-		map textures/sirius/e6metalfan.tga
+		map textures/sirius/e6metalfan
 		blendfunc blend
 	}
 	{
@@ -114,18 +114,18 @@ textures/sirius/e6metalfan_s2
 
 textures/sirius/panel
 {
-	qer_editorimage textures/sirius/panel.tga
+	qer_editorimage textures/sirius/panel
 	{
 		map $lightmap
 		rgbGen identity
 	}
 	{
-		map textures/sirius/panel.tga
+		map textures/sirius/panel
 		blendFunc GL_DST_COLOR GL_ZERO
 		rgbGen identity
 	}
 	{
-		map textures/sirius/panel.blend.tga
+		map textures/sirius/panel.blend
 		blendfunc GL_ONE GL_ONE
 	}
 }
@@ -140,12 +140,12 @@ textures/sirius/wsupport12
 		rgbGen identity
 	}
 	{
-		map textures/sirius/wsupport12.tga
+		map textures/sirius/wsupport12
 		blendFunc GL_DST_COLOR GL_ZERO
 		rgbGen identity
 	}
 	{
-		map textures/sirius/wsupport12.blend.tga
+		map textures/sirius/wsupport12.blend
 		rgbGen wave sin 0.5 0.5 1 1
 		blendfunc GL_ONE GL_ONE
 	}
@@ -156,10 +156,10 @@ textures/sirius/wsupport12
 // shader by Ingar
 textures/sirius/e8basictrim2_red_cullnone
 {
-        qer_editorimage textures/sirius/e8basictrim2_red.tga
+        qer_editorimage textures/sirius/e8basictrim2_red
 	cull none
         {
-                map textures/sirius/e8basictrim2_red.tga
+                map textures/sirius/e8basictrim2_red
         }
         {
                 map $lightmap
@@ -173,7 +173,7 @@ textures/sirius/e8basictrim2_red_cullnone
 // by Jex or Timbo
 textures/sirius/ladder {
 	qer_trans .75
-	qer_editorimage textures/sirius/ladder.tga
+	qer_editorimage textures/sirius/ladder
 	surfaceparm ladder
 	surfaceparm nodraw
 	surfaceparm nolightmap
@@ -187,7 +187,7 @@ textures/sirius/ladder {
 // -------------------- Nonsolid ------------------------------------
 textures/sirius/mtl_rst_nosolid
 {
-	qer_editorimage textures/sirius/mtl_rst.tga
+	qer_editorimage textures/sirius/mtl_rst
 	surfaceparm nonsolid
 	{
                       map $lightmap
@@ -195,7 +195,7 @@ textures/sirius/mtl_rst_nosolid
         }
 
 	{
-		map textures/sirius/mtl_rst.tga
+		map textures/sirius/mtl_rst
 		blendFunc GL_DST_COLOR GL_ZERO
 	}
 }
@@ -205,12 +205,12 @@ textures/sirius/mtl_rst_nosolid
 // evillairs red striplight
 textures/sirius/e6redlight
 {
-        qer_editorimage textures/sirius/e6basicstrip_red.tga
+        qer_editorimage textures/sirius/e6basicstrip_red
         q3map_surfacelight 100
         surfaceparm nomarks
         surfaceparm nolightmap
         {
-                map textures/sirius/e6basicstrip_red.tga
+                map textures/sirius/e6basicstrip_red
 
         }
 }
@@ -218,12 +218,12 @@ textures/sirius/e6redlight
 // evillairs red striplight
 textures/sirius/e6redlight_bright
 {
-        qer_editorimage textures/sirius/e6basicstrip_red.tga
+        qer_editorimage textures/sirius/e6basicstrip_red
         q3map_surfacelight 2500
         surfaceparm nomarks
         surfaceparm nolightmap
         {
-                map textures/sirius/e6basicstrip_red.tga
+                map textures/sirius/e6basicstrip_red
 
         }
 }
@@ -231,12 +231,12 @@ textures/sirius/e6redlight_bright
 // evillairs red striplight
 textures/sirius/e6redlight_blink
 {
-        qer_editorimage textures/sirius/e6basicstrip_red.tga
+        qer_editorimage textures/sirius/e6basicstrip_red
 //        q3map_surfacelight 5000
         surfaceparm nomarks
         surfaceparm nolightmap
         {
-                map textures/sirius/e6basicstrip_red.tga
+                map textures/sirius/e6basicstrip_red
 		rgbGen wave square .5 .5 0 1
 
         }
@@ -245,12 +245,12 @@ textures/sirius/e6redlight_blink
 // evillairs white striplight
 textures/sirius/e6whitelight
 {
-        qer_editorimage textures/sirius/e6basicstrip_white.tga
+        qer_editorimage textures/sirius/e6basicstrip_white
         q3map_surfacelight 100
         surfaceparm nomarks
         surfaceparm nolightmap
         {
-                map textures/sirius/e6basicstrip_white.tga
+                map textures/sirius/e6basicstrip_white
 
         }
 }
@@ -258,12 +258,12 @@ textures/sirius/e6whitelight
 // evillairs white striplight, bright light
 textures/sirius/e6whitelight_bright
 {
-        qer_editorimage textures/sirius/e6basicstrip_white.tga
+        qer_editorimage textures/sirius/e6basicstrip_white
         q3map_surfacelight 2500
         surfaceparm nomarks
         surfaceparm nolightmap
         {
-                map textures/sirius/e6basicstrip_white.tga
+                map textures/sirius/e6basicstrip_white
 
         }
 }
@@ -271,12 +271,12 @@ textures/sirius/e6whitelight_bright
 // yellow light
 textures/sirius/e8tinylight
 {
-	qer_editorimage textures/sirius/e8tinylight.jpg
-	q3map_lightimage textures/sirius/e8tinylight.blend.jpg
+	qer_editorimage textures/sirius/e8tinylight
+	q3map_lightimage textures/sirius/e8tinylight.blend
 	surfaceparm nomarks
 	q3map_surfacelight 950
 	{
-		map textures/sirius/e8tinylight.jpg
+		map textures/sirius/e8tinylight
 	}
 	{
 		map $lightmap 
@@ -284,7 +284,7 @@ textures/sirius/e8tinylight
 		tcGen lightmap 
 	}
 	{
-		map textures/sirius/e8tinylight.blend.jpg
+		map textures/sirius/e8tinylight.blend
 		blendfunc add
 	}
 }
@@ -292,12 +292,12 @@ textures/sirius/e8tinylight
 // tiny yellow light 5k
 textures/sirius/e8tinylight_5k
 {
-	qer_editorimage textures/sirius/e8tinylight.jpg
-	q3map_lightimage textures/sirius/e8tinylight.blend.jpg
+	qer_editorimage textures/sirius/e8tinylight
+	q3map_lightimage textures/sirius/e8tinylight.blend
 	surfaceparm nomarks
 	q3map_surfacelight 5000
 	{
-		map textures/sirius/e8tinylight.jpg
+		map textures/sirius/e8tinylight
 	}
 	{
 		map $lightmap 
@@ -305,7 +305,7 @@ textures/sirius/e8tinylight_5k
 		tcGen lightmap 
 	}
 	{
-		map textures/sirius/e8tinylight.blend.jpg
+		map textures/sirius/e8tinylight.blend
 		blendfunc add
 	}
 }
@@ -313,12 +313,12 @@ textures/sirius/e8tinylight_5k
 // tiny yellow light 10k
 textures/sirius/e8tinylight_10k
 {
-	qer_editorimage textures/sirius/e8tinylight.jpg
-	q3map_lightimage textures/sirius/e8tinylight.blend.jpg
+	qer_editorimage textures/sirius/e8tinylight
+	q3map_lightimage textures/sirius/e8tinylight.blend
 	surfaceparm nomarks
 	q3map_surfacelight 10000
 	{
-		map textures/sirius/e8tinylight.jpg
+		map textures/sirius/e8tinylight
 	}
 	{
 		map $lightmap 
@@ -326,7 +326,7 @@ textures/sirius/e8tinylight_10k
 		tcGen lightmap 
 	}
 	{
-		map textures/sirius/e8tinylight.blend.jpg
+		map textures/sirius/e8tinylight.blend
 		blendfunc add
 	}
 }
@@ -334,11 +334,11 @@ textures/sirius/e8tinylight_10k
 // tiny blue light 10k
 textures/sirius/e8tinylightblue_s_10k
 {
-	qer_editorimage textures/sirius/e8tinylightblue.tga
+	qer_editorimage textures/sirius/e8tinylightblue
 	surfaceparm nomarks
 	q3map_surfacelight 10000
 	{
-		map textures/sirius/e8tinylightblue.tga
+		map textures/sirius/e8tinylightblue
 	}
 	{
 		map $lightmap 
@@ -346,14 +346,14 @@ textures/sirius/e8tinylightblue_s_10k
 		tcGen lightmap 
 	}
 	{
-		map textures/sirius/e8tinylightblue.blend.tga
+		map textures/sirius/e8tinylightblue.blend
 		blendfunc add
 	}
 }
 
 textures/sirius/proto_lightred_64_300
 {
-	qer_editorimage textures/sirius/proto_lightred_64.tga
+	qer_editorimage textures/sirius/proto_lightred_64
 	surfaceparm nomarks
 	q3map_surfacelight 300
 	{
@@ -361,12 +361,12 @@ textures/sirius/proto_lightred_64_300
 		rgbGen identity
 	}
 	{
-		map textures/sirius/proto_lightred_64.tga
+		map textures/sirius/proto_lightred_64
 		blendFunc filter
 		rgbGen identity
 	}
         {
-		map textures/sirius/proto_lightred_64.tga
+		map textures/sirius/proto_lightred_64
 		blendFunc add
 	}
 	
@@ -374,7 +374,7 @@ textures/sirius/proto_lightred_64_300
 
 textures/sirius/proto_lightred_64_7k
 {
-	qer_editorimage textures/sirius/proto_lightred_64.tga
+	qer_editorimage textures/sirius/proto_lightred_64
 	surfaceparm nomarks
 	q3map_surfacelight 7000
 	{
@@ -382,12 +382,12 @@ textures/sirius/proto_lightred_64_7k
 		rgbGen identity
 	}
 	{
-		map textures/sirius/proto_lightred_64.tga
+		map textures/sirius/proto_lightred_64
 		blendFunc filter
 		rgbGen identity
 	}
         {
-		map textures/sirius/proto_lightred_64.tga
+		map textures/sirius/proto_lightred_64
 		blendFunc add
 	}
 	
@@ -396,8 +396,8 @@ textures/sirius/proto_lightred_64_7k
 // from niveus - blinking light
 textures/sirius/proto_lightred_64_blink
 {
-	q3map_lightimage textures/sirius/proto_lightred_64.tga
-	qer_editorimage textures/sirius/proto_lightred_64.tga
+	q3map_lightimage textures/sirius/proto_lightred_64
+	qer_editorimage textures/sirius/proto_lightred_64
 	surfaceparm nomarks
 	q3map_surfacelight 50
 	{
@@ -405,12 +405,12 @@ textures/sirius/proto_lightred_64_blink
 		rgbGen identity
 	}
 	{
-		map textures/sirius/proto_lightred_64.tga
+		map textures/sirius/proto_lightred_64
 		blendFunc filter
 		rgbGen identity
 	}
         {
-		map textures/sirius/proto_lightred_64.tga
+		map textures/sirius/proto_lightred_64
 		blendFunc add
 		rgbGen wave square .5 .5 0 1
 	}
@@ -419,36 +419,36 @@ textures/sirius/proto_lightred_64_blink
 
 textures/sirius/sq_light_orange_s_25k
 {
-	qer_editorimage textures/sirius/sq_light_orange.tga
+	qer_editorimage textures/sirius/sq_light_orange
 	surfaceparm nomarks
 	q3map_surfacelight 25000
 	{
-		map textures/sirius/sq_light_orange.tga
+		map textures/sirius/sq_light_orange
 	}
 	{
 		map $lightmap 
 		blendfunc filter
 	}
 	{
-		map textures/sirius/sq_light_orange.tga
+		map textures/sirius/sq_light_orange
 		blendfunc add
 	}
 }
 
 textures/sirius/sq_light_orange_s_10k
 {
-	qer_editorimage textures/sirius/sq_light_orange.tga
+	qer_editorimage textures/sirius/sq_light_orange
 	surfaceparm nomarks
 	q3map_surfacelight 10000
 	{
-		map textures/sirius/sq_light_orange.tga
+		map textures/sirius/sq_light_orange
 	}
 	{
 		map $lightmap 
 		blendfunc filter
 	}
 	{
-		map textures/sirius/sq_light_orange.tga
+		map textures/sirius/sq_light_orange
 		blendfunc add
 	}
 }
@@ -456,13 +456,13 @@ textures/sirius/sq_light_orange_s_10k
 // by Evillair, edited by Godmil
 textures/sirius/e8tmtllight2
 {
-	qer_editorimage textures/sirius/e8tmtllight2.tga
-	q3map_lightimage textures/sirius/e8tmtllight2.blend.tga
+	qer_editorimage textures/sirius/e8tmtllight2
+	q3map_lightimage textures/sirius/e8tmtllight2.blend
 	surfaceparm nomarks
 	surfaceparm nonsolid
 	q3map_surfacelight 1000
 	{
-		map textures/sirius/e8tmtllight2.tga
+		map textures/sirius/e8tmtllight2
 	}
 	{
 		map $lightmap
@@ -470,7 +470,7 @@ textures/sirius/e8tmtllight2
 		tcGen lightmap
 	}
 	{
-		map textures/sirius/e8tmtllight2.blend.tga
+		map textures/sirius/e8tmtllight2.blend
 		blendfunc add
 	}
 }
@@ -478,7 +478,7 @@ textures/sirius/e8tmtllight2
 // cubelight white (niveus)
 textures/sirius/cubelight_32_white_250
 {
-	qer_editorimage textures/sirius/cubelight_32_white.tga
+	qer_editorimage textures/sirius/cubelight_32_white
 	surfaceparm nomarks
 	q3map_surfacelight 250
 	{
@@ -486,12 +486,12 @@ textures/sirius/cubelight_32_white_250
 		rgbGen identity
 	}
 	{
-		map textures/sirius/cubelight_32_white.tga
+		map textures/sirius/cubelight_32_white
 		blendFunc GL_DST_COLOR GL_ZERO
 		rgbGen identity
 	}
 	{
-		map textures/sirius/cubelight_32_white.blend.tga
+		map textures/sirius/cubelight_32_white.blend
 		blendfunc GL_ONE GL_ONE
 	}
 }
@@ -499,7 +499,7 @@ textures/sirius/cubelight_32_white_250
 // cubelight white (niveus)
 textures/sirius/cubelight_32_white_5k
 {
-	qer_editorimage textures/sirius/cubelight_32_white.tga
+	qer_editorimage textures/sirius/cubelight_32_white
 	surfaceparm nomarks
 	q3map_surfacelight 5000
 	{
@@ -507,12 +507,12 @@ textures/sirius/cubelight_32_white_5k
 		rgbGen identity
 	}
 	{
-		map textures/sirius/cubelight_32_white.tga
+		map textures/sirius/cubelight_32_white
 		blendFunc GL_DST_COLOR GL_ZERO
 		rgbGen identity
 	}
 	{
-		map textures/sirius/cubelight_32_white.blend.tga
+		map textures/sirius/cubelight_32_white.blend
 		blendfunc GL_ONE GL_ONE
 	}
 }
@@ -520,7 +520,7 @@ textures/sirius/cubelight_32_white_5k
 // cubelight white (niveus)
 textures/sirius/cubelight_32_white_10k
 {
-	qer_editorimage textures/sirius/cubelight_32_white.tga
+	qer_editorimage textures/sirius/cubelight_32_white
 	surfaceparm nomarks
 	q3map_surfacelight 10000
 	{
@@ -528,12 +528,12 @@ textures/sirius/cubelight_32_white_10k
 		rgbGen identity
 	}
 	{
-		map textures/sirius/cubelight_32_white.tga
+		map textures/sirius/cubelight_32_white
 		blendFunc GL_DST_COLOR GL_ZERO
 		rgbGen identity
 	}
 	{
-		map textures/sirius/cubelight_32_white.blend.tga
+		map textures/sirius/cubelight_32_white.blend
 		blendfunc GL_ONE GL_ONE
 	}
 }
@@ -542,11 +542,11 @@ textures/sirius/cubelight_32_white_10k
 
 textures/sirius/mist_s
 {
-	qer_editorimage textures/sirius/mist.tga
+	qer_editorimage textures/sirius/mist
         entityMergable
         cull none
         {
-                map textures/sirius/mist.tga
+                map textures/sirius/mist
                 blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
                 rgbGen          vertex
                 alphaGen        vertex
