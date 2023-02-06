@@ -1,69 +1,67 @@
 // shaders for sirius
-// 
 
-// -------------------- Sky box
+// Sky box
 // environment map "Top of the Heap" by Mighty Pete
 textures/sirius/top-of-the-heap
 {
-      qer_editorimage env/sirius/top-of-the-heap/top-of-the-heap-small
-      surfaceparm noimpact
-      surfaceparm nolightmap
-      surfaceparm sky
-      //q3map_sun   .5 .37 .22 300 265 15
-      q3map_surfacelight 50
+	qer_editorimage env/sirius/topofthe-heap/top-of-the-heap-small
+	surfaceparm noimpact
+	surfaceparm nolightmap
+	surfaceparm sky
+	//q3map_sun .5 .37 .22 300 265 15
+	q3map_surfacelight 50
 
-     skyparms env/sirius/top-of-the-heap/top-of-the-heap512 - -
+	skyparms env/sirius/top-of-the-heap/top-of-the-heap512 - -
 }
 
+// Glass
 
-// -------------------- Glass -----------------------
-
-// by Ingar - last changes 2007-08-22
+// by Ingar -- last changes 200708-22
 textures/sirius/glass
 {
-        qer_editorimage textures/sirius/glass
-        qer_trans .5
-        surfaceparm nolightmap
-        surfaceparm trans
+	qer_editorimage textures/sirius/glass
+	qer_trans .5
+	surfaceparm nolightmap
+	surfaceparm trans
 //	surfaceparm nomarks
 	surfaceparm playerclip
-        {
-                map textures/sirius/glass
-                blendfunc filter
-        }
-        {
-                map textures/sirius/glass-env
-                tcGen environment
-                blendfunc gl_dst_color gl_src_alpha
-        }
-        {
-                map $lightmap
-                rgbgen identity
-                blendfunc gl_dst_color gl_zero
-        }
+	{
+		map textures/sirius/glass
+		blendfunc filter
+	}
+	{
+		map textures/sirius/glass-env
+		tcGen environment
+		blendfunc gl_dst_color gl_src_alpha
+	}
+	{
+		map $lightmap
+		rgbgen identity
+		blendfunc gl_dst_color gl_zero
+	}
 }
 
-// -------------------- Grates & Floors -------------------------------
+// Grates & Floors
 
 // by evillair
 textures/sirius/e6bsegrtflr256
 {
-        qer_editorimage textures/sirius/e6bsegrtflr256
-        surfaceparm trans
-        surfaceparm nomarks
-        surfaceparm metalsteps
-        cull none
+	qer_editorimage textures/sirius/e6bsegrtflr256
+	surfaceparm trans
+	surfaceparm nomarks
+	surfaceparm metalsteps
+	cull none
 
-        {
-                map textures/sirius/e6bsegrtflr256
-                alphafunc GE128
-                depthwrite
-        }
-        {
-                map $lightmap
-                depthfunc equal
-                blendfunc filter
-        }
+	{
+		map textures/sirius/e6bsegrtflr256
+		alphafunc GE128
+		depthwrite
+	}
+	{
+		map $lightmap
+		depthfunc equal
+		blendfunc filter
+	}
 }
 
 textures/sirius/e8clangfloor05:q3map
@@ -71,15 +69,15 @@ textures/sirius/e8clangfloor05:q3map
 	surfaceparm metalsteps
 }
 
-// -------------------- Metal ---------------------------------------
+// Metal
 
 textures/sirius/tin_s
 {
 	qer_editorimage textures/sirius/tin
 	{
-		map $lightmap 
+		map $lightmap
 		rgbGen identity
-		tcGen lightmap 
+		tcGen lightmap
 	}
 	{
 		map textures/sirius/tin
@@ -89,7 +87,7 @@ textures/sirius/tin_s
 	}
 }
 
-// -------------------- Fans ----------------------------------------
+// Fans
 
 // by Evillair
 textures/sirius/e6metalfan_s2
@@ -110,7 +108,7 @@ textures/sirius/e6metalfan_s2
 	}
 }
 
-// -------------------- Panels / Decoration -------------------------
+// Panels / Decoration
 
 textures/sirius/panel
 {
@@ -151,24 +149,23 @@ textures/sirius/wsupport12
 	}
 }
 
-// -------------------- Patches special -----------------------------
+// Patches special
 
 // shader by Ingar
 textures/sirius/e8basictrim2_red_cullnone
 {
-        qer_editorimage textures/sirius/e8basictrim2_red
+	qer_editorimage textures/sirius/e8basictrim2_red
 	cull none
-        {
-                map textures/sirius/e8basictrim2_red
-        }
-        {
-                map $lightmap
-                blendfunc filter
-        }
+	{
+		map textures/sirius/e8basictrim2_red
+	}
+	{
+		map $lightmap
+		blendfunc filter
+	}
 }
 
-
-// -------------------- Ladder --------------------------------------
+// Ladder
 
 // by Jex or Timbo
 textures/sirius/ladder {
@@ -184,15 +181,15 @@ textures/sirius/ladder {
 	surfaceparm playerclip
 }
 
-// -------------------- Nonsolid ------------------------------------
+// Nonsolid
 textures/sirius/mtl_rst_nosolid
 {
 	qer_editorimage textures/sirius/mtl_rst
 	surfaceparm nonsolid
 	{
-                      map $lightmap
-                      rgbGen identity
-        }
+		map $lightmap
+		rgbGen identity
+	}
 
 	{
 		map textures/sirius/mtl_rst
@@ -200,72 +197,72 @@ textures/sirius/mtl_rst_nosolid
 	}
 }
 
-// -------------------- Lights  -------------------------------------
+// Lights
 
 // evillairs red striplight
 textures/sirius/e6redlight
 {
-        qer_editorimage textures/sirius/e6basicstrip_red
-        q3map_surfacelight 100
-        surfaceparm nomarks
-        surfaceparm nolightmap
-        {
-                map textures/sirius/e6basicstrip_red
+	qer_editorimage textures/sirius/e6basicstrip_red
+	q3map_surfacelight 100
+	surfaceparm nomarks
+	surfaceparm nolightmap
+	{
+		map textures/sirius/e6basicstrip_red
 
-        }
+	}
 }
 
 // evillairs red striplight
 textures/sirius/e6redlight_bright
 {
-        qer_editorimage textures/sirius/e6basicstrip_red
-        q3map_surfacelight 2500
-        surfaceparm nomarks
-        surfaceparm nolightmap
-        {
-                map textures/sirius/e6basicstrip_red
+	qer_editorimage textures/sirius/e6basicstrip_red
+	q3map_surfacelight 2500
+	surfaceparm nomarks
+	surfaceparm nolightmap
+	{
+		map textures/sirius/e6basicstrip_red
 
-        }
+	}
 }
 
 // evillairs red striplight
 textures/sirius/e6redlight_blink
 {
-        qer_editorimage textures/sirius/e6basicstrip_red
-//        q3map_surfacelight 5000
-        surfaceparm nomarks
-        surfaceparm nolightmap
-        {
-                map textures/sirius/e6basicstrip_red
+	qer_editorimage textures/sirius/e6basicstrip_red
+//	q3map_surfacelight 5000
+	surfaceparm nomarks
+	surfaceparm nolightmap
+	{
+		map textures/sirius/e6basicstrip_red
 		rgbGen wave square .5 .5 0 1
 
-        }
+	}
 }
 
 // evillairs white striplight
 textures/sirius/e6whitelight
 {
-        qer_editorimage textures/sirius/e6basicstrip_white
-        q3map_surfacelight 100
-        surfaceparm nomarks
-        surfaceparm nolightmap
-        {
-                map textures/sirius/e6basicstrip_white
+	qer_editorimage textures/sirius/e6basicstrip_white
+	q3map_surfacelight 100
+	surfaceparm nomarks
+	surfaceparm nolightmap
+	{
+		map textures/sirius/e6basicstrip_white
 
-        }
+	}
 }
 
 // evillairs white striplight, bright light
 textures/sirius/e6whitelight_bright
 {
-        qer_editorimage textures/sirius/e6basicstrip_white
-        q3map_surfacelight 2500
-        surfaceparm nomarks
-        surfaceparm nolightmap
-        {
-                map textures/sirius/e6basicstrip_white
+	qer_editorimage textures/sirius/e6basicstrip_white
+	q3map_surfacelight 2500
+	surfaceparm nomarks
+	surfaceparm nolightmap
+	{
+		map textures/sirius/e6basicstrip_white
 
-        }
+	}
 }
 
 // yellow light
@@ -279,9 +276,9 @@ textures/sirius/e8tinylight
 		map textures/sirius/e8tinylight
 	}
 	{
-		map $lightmap 
+		map $lightmap
 		blendfunc filter
-		tcGen lightmap 
+		tcGen lightmap
 	}
 	{
 		map textures/sirius/e8tinylight.blend
@@ -300,9 +297,9 @@ textures/sirius/e8tinylight_5k
 		map textures/sirius/e8tinylight
 	}
 	{
-		map $lightmap 
+		map $lightmap
 		blendfunc filter
-		tcGen lightmap 
+		tcGen lightmap
 	}
 	{
 		map textures/sirius/e8tinylight.blend
@@ -321,9 +318,9 @@ textures/sirius/e8tinylight_10k
 		map textures/sirius/e8tinylight
 	}
 	{
-		map $lightmap 
+		map $lightmap
 		blendfunc filter
-		tcGen lightmap 
+		tcGen lightmap
 	}
 	{
 		map textures/sirius/e8tinylight.blend
@@ -341,9 +338,9 @@ textures/sirius/e8tinylightblue_s_10k
 		map textures/sirius/e8tinylightblue
 	}
 	{
-		map $lightmap 
+		map $lightmap
 		blendfunc filter
-		tcGen lightmap 
+		tcGen lightmap
 	}
 	{
 		map textures/sirius/e8tinylightblue.blend
@@ -365,11 +362,11 @@ textures/sirius/proto_lightred_64_300
 		blendFunc filter
 		rgbGen identity
 	}
-        {
+	{
 		map textures/sirius/proto_lightred_64
 		blendFunc add
 	}
-	
+
 }
 
 textures/sirius/proto_lightred_64_7k
@@ -386,14 +383,14 @@ textures/sirius/proto_lightred_64_7k
 		blendFunc filter
 		rgbGen identity
 	}
-        {
+	{
 		map textures/sirius/proto_lightred_64
 		blendFunc add
 	}
-	
+
 }
 
-// from niveus - blinking light
+// from niveus -- blinking light
 textures/sirius/proto_lightred_64_blink
 {
 	q3map_lightimage textures/sirius/proto_lightred_64
@@ -409,12 +406,12 @@ textures/sirius/proto_lightred_64_blink
 		blendFunc filter
 		rgbGen identity
 	}
-        {
+	{
 		map textures/sirius/proto_lightred_64
 		blendFunc add
 		rgbGen wave square .5 .5 0 1
 	}
-	
+
 }
 
 textures/sirius/sq_light_orange_s_25k
@@ -426,7 +423,7 @@ textures/sirius/sq_light_orange_s_25k
 		map textures/sirius/sq_light_orange
 	}
 	{
-		map $lightmap 
+		map $lightmap
 		blendfunc filter
 	}
 	{
@@ -444,7 +441,7 @@ textures/sirius/sq_light_orange_s_10k
 		map textures/sirius/sq_light_orange
 	}
 	{
-		map $lightmap 
+		map $lightmap
 		blendfunc filter
 	}
 	{
@@ -538,17 +535,17 @@ textures/sirius/cubelight_32_white_10k
 	}
 }
 
-// -------------------- Mist -----------------------
+// Mist
 
 textures/sirius/mist_s
 {
 	qer_editorimage textures/sirius/mist
-        entityMergable
-        cull none
-        {
-                map textures/sirius/mist
-                blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
-                rgbGen          vertex
-                alphaGen        vertex
-        }
+	entityMergable
+	cull none
+	{
+		map textures/sirius/mist
+		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
+		rgbGen vertex
+		alphaGen vertex
+	}
 }

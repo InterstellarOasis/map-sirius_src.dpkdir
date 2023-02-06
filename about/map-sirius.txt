@@ -1,57 +1,54 @@
 September 3, 2007
 =============================================================================
 
-Title                   : Sirius Complex
+Title: Sirius Complex
 
-Filename	        : map-sirius.pk3
+Author: Ingar =KCT=
 
-Author                  : Ingar =KCT=
+Email Address: ingar@telenet.be
 
-Email Address           : ingar@telenet.be
+Web Site(s): http://users.telenet.be/ingar/tremulous
 
-Web Site(s)             : http://users.telenet.be/ingar/tremulous
+Description: Map for the open source game Tremulous
 
-Description             : Map for the open source game Tremulous
+Thanks to: ID-Software for Quake III Arena, darklegion for Tremulous,
+and all contributors of maps, sounds, textures...
 
-Credits to              : ID-Software for Quake III Arena,
-                          darklegion for Tremulous,
-			  and all contributors of maps, sounds, textures...
-
-			  This map was made with Open Source software:
-			  Linux, the Gimp, GtkRadiant.
+This map was made with Open Source software:
+Linux, the Gimp, GtkRadiant.
 
 =============================================================================
 
-	The Sirius map file and media are available under the 
+	The Sirius map file and media are available under the
 	conditions of the Creative Commons License
 	http://creativecommons.org/licenses/by-sa/2.5
 
 	Most of the sounds, textures and shaders were taken from
-	the standard tremulous maps. See the file COPYING 
+	the standard tremulous maps. See the file COPYING
 	in the Tremulous folder for more details.
 
 =============================================================================
 
 	This is the final release of the Sirius Complex.
-	
+
 
 SIRIUS
 
-	After a fierce battle Procyon had fallen. The humans fought 
+	After a fierce battle Procyon had fallen. The humans fought
 	long and valiantly, but in the end the station was overrun.
 
-	The High Command knew the battle was hopeless. In secret, 
+	The High Command knew the battle was hopeless. In secret,
 	a new complex was constructed to prepare for the counter-
 	attack, and maybe for all out war.
 
 	The clock is ticking...
-	
+
 
 ACKNOWLEDGEMENTS
 
-	This map uses textures by 
+	This map uses textures by
 		Yves 'evillair' Allaire http://evillair.net/
-	
+
 	Skybox
 		Top of the Heap by 'Mighty Pete'
 		http://www.geocities.com/petes-oasis/
@@ -67,7 +64,7 @@ THANKS
 
 	Thorn, Gareth, Khalsa, Karvajalka and Jhaa
 		For the test game
-	
+
 	=KCT=
 		Carnalisimo!
 
@@ -76,23 +73,23 @@ THANKS
 
 SOURCE
 
-	The source .map file is included in the .pk3 archive, 
+	The source .map file is included in the .pk3 archive,
 	I used the following q3map2 settings:
 
 	q3map2 -leaktest -custinfoparms -samplesize 8 -meta
-	q3map2 -vis -saveprt 
+	q3map2 -vis -saveprt
 	q3map2 -light -scale 1.1 -fast -shade -dirty -patchshadows -samples 3 -bounce 6 -bouncegrid
 
 STATISTICS
 
-	Construction time: 	8 months
-	Brushes:		9668
-	Patches:		330
-	Entities:		213
-	Build time:		1 hour (AMD Athlon64 X2 4600+)
+	Construction time: 8 months
+	Brushes: 9668
+	Patches: 330
+	Entities: 213
+	Build time: 1 hour (AMD Athlon64 X2 4600+)
 
 HISTORY
-	
+
 	2007-09-03: Final
 		Improved human base, added an extra base location
 		Roof window in the Flow Control room
@@ -115,5 +112,5 @@ HISTORY
 
 	2006-12-09: Project Start
 		Started Flow Control room
-	
+
 Questions, bugs or suggestions? Send them to ingar@telenet.be
