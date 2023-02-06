@@ -1,5 +1,6 @@
 {
-  map       "sirius"
-  longname  "Sirius Complex"
-  type      "tremulous"
+	map "sirius"
+	longname "Sirius Complex"
+	author "Ingar"
+	type "tremulous"
 }
